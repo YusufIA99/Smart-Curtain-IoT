@@ -1,4 +1,3 @@
-//1. Import React and CSS
 import React from "react";
 import "./Hero.css";
 
