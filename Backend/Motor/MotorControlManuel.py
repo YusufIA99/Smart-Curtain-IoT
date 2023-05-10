@@ -42,7 +42,7 @@ ccw_seq = [
     [1,0,0,1]
 ]
 
-@app.route("/open_curtain")
+# Define the functions to open and close the curtains
 def open_curtain():
     for i in range(500):
         for j in range(8):
@@ -51,9 +51,7 @@ def open_curtain():
             GPIO.output(IN3, cw_seq[j][2])
             GPIO.output(IN4, cw_seq[j][3])
             time.sleep(0.001)
-    return jsonify({"status": "ok"})
 
-@app.route("/close_curtain")
 def close_curtain():
     for i in range(500):
         for j in range(8):
@@ -62,14 +60,23 @@ def close_curtain():
             GPIO.output(IN3, ccw_seq[j][2])
             GPIO.output(IN4, ccw_seq[j][3])
             time.sleep(0.001)
-    return jsonify({"status": "ok"})
 
-@app.route("/")
-def index():
-    return "Hello, World!"
+# Define the endpoints to open and close the curtains
+@app.route('/api/open', methods=['POST'])
+def open():
+    open_curtain()
+    return jsonify({'success': True})
 
-if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000, debug=True)
+@app.route('/api/close', methods=['POST'])
+def close():
+    close_curtain()
+    return jsonify({'success': True})
 
-# Clean up the GPIO pins
-GPIO.cleanup()
+# Clean up the GPIO pins when the program exits
+@app.route('/api/cleanup', methods=['POST'])
+def cleanup():
+    GPIO.cleanup()
+    return jsonify({'success': True})
+
+if __name__ == '__main__':
+    app.run(debug=True, host='0.0.0.0')
