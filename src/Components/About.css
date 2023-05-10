@@ -1,0 +1,21 @@
+#om-os {
+    background-color: #F5F5DC;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #om-os h1 {
+    font-size: 64px;
+    font-weight: 700;
+    color: #222;
+  }
+  
+  #om-os p {
+    font-size: 20px;
+    color: #222;
+    margin: 20px 0 30px 0;
+  }
+  
+  

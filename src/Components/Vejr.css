@@ -1,0 +1,51 @@
+#vejr-hero {
+    background-color: #F5F5DC;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  #textarea {
+    background-color: #F5F5DC;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  
+  
+  #vejr-hero .content {
+    max-width: 600px;
+    text-align: center;
+  }
+  
+  #vejr-hero h1 {
+    font-size: 64px;
+    font-weight: 700;
+    color: #222;
+  }
+  
+  #vejr-hero p {
+    font-size: 20px;
+    color: #222;
+    margin: 20px 0 30px 0;
+  }
+  
+  #vejr-hero .btn {
+    display: inline-block;
+    background: rgba(162, 105, 52, 0.59);
+    color: #fff;
+    width: 147px;
+    height: 25px;
+    position: relative;
+    
+  }
+  
+  #vejr-hero .btn:hover {
+    background: #888;
+    cursor: pointer;
+  
+  }
+  

@@ -13,7 +13,7 @@
   #navbar {
     display: flex;
     align-items: center;
-    
+    position: sticky;
   }
   
   h1 {
@@ -23,7 +23,6 @@
     flex: 1;
     text-align: center;
   }
-  
   
   img {
     width: 60px;
@@ -51,15 +50,18 @@
     display: none;
     font-size: 1.5rem;
     cursor: pointer;
-    
   }
   
-  /*Responsive navbar*/
-  
+  /* Responsive navbar */
   @media (max-width: 768px) {
     .toggle_btn {
       display: block;
     }
+    
+    #header {
+      padding: 20px 40px;
+    }
+  
     #navbar {
       position: fixed;
       top: 80px;
@@ -72,13 +74,14 @@
       justify-content: space-evenly;
       transition: 0.3s ease;
     }
+    
     #navbar.active {
-     right: 0%;
-  
+      right: 0%;
     }
-  
+    
     #navbar.active ul {
       display: flex;
       flex-direction: column;
     }
   }
+  
