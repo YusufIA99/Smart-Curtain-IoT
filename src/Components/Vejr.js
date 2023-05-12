@@ -21,12 +21,16 @@ function Vejr() {
 
   return (
     <div className="Vejr" id='Vejr'>
+      <div className="title">
+        <h1>Find vejrudsigten</h1>
+      </div>
+
       <div className="search">
         <input
           value={location}
           onChange={event => setLocation(event.target.value)}
           onKeyPress={searchLocation}
-          placeholder='Enter Location'
+          placeholder='Søg eftter by eller sted'
           type="text" />
       </div>
       <div className="container">
