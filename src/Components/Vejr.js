@@ -41,9 +41,6 @@ function Vejr() {
           <div className="temp">
             {data.main ? <h1>{data.main.temp.toFixed()}°C</h1> : null}
           </div>
-          <div className="description">
-            {data.weather ? <p>{data.weather[0].main}</p> : null}
-          </div>
         </div>
 
         {data.name !== undefined &&
@@ -56,7 +53,7 @@ function Vejr() {
               {data.main ? <p className='bold'>{data.main.humidity}%</p> : null}
               <p>Fugtighed</p>
             </div>
-            <div className="wind">
+            <div className="Cloud">
             {data.clouds ? <p className='bold'>{data.clouds.all}%</p> : null}
             <p>Skyer</p>
             </div>
