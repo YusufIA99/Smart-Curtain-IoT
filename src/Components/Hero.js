@@ -36,13 +36,13 @@ function Hero() {
     return (
         <section id="hero">
             <div className="Åben" id="åben-btn" onClick={handleClickOpen}>
-                <img src="/Åbent.png" alt="" />
+                <img src="./Assests/Åbent.png" alt="" />
                 <p>Åben gardinerne</p>
                 <button className="btn">Åben</button>
             </div>
 
             <div className="Lukke" id="lukke-btn" onClick={handleClickClose}>
-                <img src="/Lukket.png" alt="" />
+              <img src="./Assests/Lukket.png" alt="" />
                 <p>Luk gardinerne</p>
                 <button className="btn">Lukke</button>
             </div>

@@ -20,7 +20,7 @@ function Vejr() {
   }
 
   return (
-    <div className="Vejr">
+    <div className="Vejr" id='Vejr'>
       <div className="search">
         <input
           value={location}

@@ -13,7 +13,7 @@ function Header() {
               <a href="#hero">Hjem</a>
             </li>
             <li>
-              <a href="#vejr-hero">Vejret</a>
+              <a href="#Vejr">Vejret</a>
             </li>
             <li>
               <a href="#om-os">Om os</a>
