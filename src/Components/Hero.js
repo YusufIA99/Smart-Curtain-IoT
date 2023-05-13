@@ -2,7 +2,7 @@ import React from "react";
 import "./Hero.css";
 
 function Hero() {
-  
+
     const handleClickOpen = () => {
         //4. Fetch data from the backend
         fetch("/open")
@@ -32,19 +32,17 @@ function Hero() {
             });
     };
 
-   
+
     return (
         <section id="hero">
-            <div className="Åben" id="åben-btn" onClick={handleClickOpen}>
-            <img src="./Assets/Åbent.png" alt="" />
+            <div className="Åben åben-btn" id="åben-btn" onClick={handleClickOpen}>
+                <img src="./Assets/Åbent.png" alt="" />
                 <p>Åben gardinerne</p>
                 <button className="btn">Åben</button>
             </div>
 
-        
-
             <div className="Lukke" id="lukke-btn" onClick={handleClickClose}>
-              <img src="./Assets/Åbent.png" alt="" />
+                <img src="./Assets/Åbent.png" alt="" />
                 <p>Luk gardinerne</p>
                 <button className="btn">Lukke</button>
             </div>
