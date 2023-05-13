@@ -6,12 +6,14 @@ import Navbar from './Components/Navbar';
 import Hero from './Components/Hero';
 import Vejr from './Components/Vejr';
 import About from './Components/About';
+import Navbar2 from './Components/Navbar2';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <App />
-    <Navbar />
+    <Navbar2 />
     <Hero />
     <Vejr/>
     <About />

@@ -1,0 +1,30 @@
+.navdesign {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  
+  .overskrift {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 400;
+    margin: 0;
+    flex: 30;
+   
+  }
+  
+  .nav-links {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+  
+
+  
