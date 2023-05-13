@@ -18,7 +18,8 @@ GPIO.setup(IN3, GPIO.OUT)
 GPIO.setup(IN4, GPIO.OUT)
  
 # Define the sequence of steps for the motor to move the curtains to open position
-cw_seq = [    [1,0,0,1],
+cw_seq = [    
+    [1,0,0,1],
     [1,0,0,0],
     [1,1,0,0],
     [0,1,0,0],
@@ -29,7 +30,8 @@ cw_seq = [    [1,0,0,1],
 ]
  
 # Define the sequence of steps for the motor to move the curtains to close position
-ccw_seq = [    [0,0,0,1],
+ccw_seq = [    
+    [0,0,0,1],
     [0,0,1,1],
     [0,0,1,0],
     [0,1,1,0],
@@ -39,10 +41,7 @@ ccw_seq = [    [0,0,0,1],
     [1,0,0,1]
 ]
  
-# Clean up the GPIO pins when the server shuts down
-@app.teardown_appcontext
-def cleanup_gpio(exception=None):
-    GPIO.cleanup()
+
  
 @app.route('/open')
 def open_curtains():
@@ -68,3 +67,8 @@ def close_curtains():
  
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
+
+# Clean up the GPIO pins when the server shuts down
+@app.teardown_appcontext
+def cleanup_gpio(exception=None):
+    GPIO.cleanup()
