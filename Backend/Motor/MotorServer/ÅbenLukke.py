@@ -45,7 +45,7 @@ ccw_seq = [
  
 @app.route('/open')
 def open_curtains():
-    for i in range(2048):
+    for i in range(500):
         for j in range(8):
             GPIO.output(IN1, cw_seq[j][0])
             GPIO.output(IN2, cw_seq[j][1])
@@ -56,7 +56,7 @@ def open_curtains():
  
 @app.route('/close')
 def close_curtains():
-    for i in range(2048):
+    for i in range(500):
         for j in range(8):
             GPIO.output(IN1, ccw_seq[j][0])
             GPIO.output(IN2, ccw_seq[j][1])
