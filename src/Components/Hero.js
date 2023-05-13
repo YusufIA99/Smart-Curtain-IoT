@@ -5,7 +5,8 @@ function Hero() {
 
     const handleClickOpen = () => {
         //4. Fetch data from the backend
-        fetch("/open")
+        fetch('http://192.168.0.100:5000/open')
+
             .then((response) => {
                 // If the response is not ok, throw an error
                 if (!response.ok) {
@@ -20,7 +21,7 @@ function Hero() {
 
     const handleClickClose = () => {
         //4. Fetch data from the backend
-        fetch("/close")
+        fetch('http://192.168.0.100:5000/close')
             .then((response) => {
                 // If the response is not ok, throw an error
                 if (!response.ok) {
