@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import Navbar from './Components/Navbar';
 import Hero from './Components/Hero';
-import VejrHero from './Components/Vejr';
+import Vejr from './Components/Vejr';
 import About from './Components/About';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -13,7 +13,7 @@ root.render(
     <App />
     <Navbar />
     <Hero />
-    <VejrHero />
+    <Vejr/>
     <About />
   </React.StrictMode>
 );

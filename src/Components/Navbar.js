@@ -5,7 +5,6 @@ function Header() {
   return (
     <div className="container">
       <section id="header">
-        <img src="Images/MatterLogo.svg" alt="Logo" />
         <h1>Smart Gardin</h1>
         <div>
           <ul id="navbar">

@@ -2,22 +2,22 @@ import RPi.GPIO as GPIO
 import time
 from temp_sensor import read_temp
 
-# Set the GPIO mode to BCM
+
 GPIO.setmode(GPIO.BCM)
 
-# Set the GPIO pin numbers for IN1, IN2, IN3, IN4
+
 IN1 = 17
 IN2 = 18
 IN3 = 27
 IN4 = 22
 
-# Set the GPIO pins as outputs
+
 GPIO.setup(IN1, GPIO.OUT)
 GPIO.setup(IN2, GPIO.OUT)
 GPIO.setup(IN3, GPIO.OUT)
 GPIO.setup(IN4, GPIO.OUT)
 
-# Define the sequence of steps for the motor
+
 cw_seq = [
     [1,0,0,1],
     [1,0,0,0],
@@ -40,8 +40,7 @@ ccw_seq = [
     [1,0,0,1]
 ]
 
-# Set the duration of rotation in seconds
-duration = 2
+duration = 3
 
 start_time = time.time()
 
@@ -65,5 +64,5 @@ while time.time() - start_time < duration:
                 GPIO.output(IN4, ccw_seq[j][3])
                 time.sleep(0.001)
 
-# Clean up the GPIO pins
+
 GPIO.cleanup()

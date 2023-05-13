@@ -4,11 +4,10 @@ import "./Hero.css";
 function Hero() {
 
     const handleClickOpen = () => {
-        //4. Fetch data from the backend
+        //Fetch data
         fetch('http://0.0.0.0:5000/open')
 
             .then((response) => {
-                // If the response is not ok, throw an error
                 if (!response.ok) {
                     throw new Error("Network response was not ok");
                 }
@@ -20,10 +19,9 @@ function Hero() {
 
 
     const handleClickClose = () => {
-        //4. Fetch data from the backend
+        //Fetch data
         fetch('http://0.0.0.0:5000/close')
             .then((response) => {
-                // If the response is not ok, throw an error
                 if (!response.ok) {
                     throw new Error("Network response was not ok");
                 }
@@ -43,7 +41,7 @@ function Hero() {
             </div>
 
             <div className="Lukke" id="lukke-btn" onClick={handleClickClose}>
-                <img src="./Åbent.png" alt="" />
+                <img src="./Lukket.png" alt="" />
                 <p>Luk gardinerne</p>
                 <button className="btn">Lukke</button>
             </div>
