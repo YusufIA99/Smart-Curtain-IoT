@@ -7,9 +7,9 @@ function Navbar2() {
   return (
     <Navbar bg="light" expand="lg" className='navdesign'>
       <Container className='navbar'> 
-        <Navbar.Brand href="#home" className='overskrift'>Smart Gardin System</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
+        <Navbar.Brand>Smart Gardin system</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" className='hamburgermenu'/>
+        <Navbar.Collapse id="basic-navbar-nav" className='navbar-nav'>
           <Nav className="nav-links">
             <Nav.Link href="#hero">Hjem</Nav.Link>
             <Nav.Link href="#Vejr">Vejret</Nav.Link>
