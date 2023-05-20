@@ -10,14 +10,12 @@ device_folder = glob.glob(base_dir + '28*')[0]
 device_file = device_folder + '/w1_slave'
 
 def read_temp_raw():
-    # Read the raw temperature data from the device.
     f = open(device_file, 'r')
     lines = f.readlines()
     f.close()
     return lines
 
 def read_temp():
-    # Read the temperature from the device and return its value in Celsius.
     lines = read_temp_raw()
     while lines[0].strip()[-3:] != 'YES':
         time.sleep(0.2)
