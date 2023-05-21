@@ -20,7 +20,7 @@ function Vejr() {
         })
         .catch((error) => {
           setData({});
-          setError('Byen er ikke fundet. Prøv igen.');
+          setError('Byen blev ikke fundet. Prøv igen.');
         });
       setLocation('');
     }
