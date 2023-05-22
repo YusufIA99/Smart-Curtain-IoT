@@ -14,8 +14,11 @@ test('TekstIPlaceholder', () => {
 //respons 200 = succes 
  test('ApiRespons', async () => {
     render(<Vejr />);
-    const API = 'https://api.openweathermap.org/data/2.5/weather?q=London&units=metric&appid=f9de4a24900764d24efc22786a7284db';
+    const API = 
+    'https://api.openweathermap.org/data/2.5/weather?q=London&units=metric&appid=f9de4a24900764d24efc22786a7284db';
     const response = await axios.get(API);
     expect(response.status).toBe(200);
   });
+  
+
   
