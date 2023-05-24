@@ -9,7 +9,7 @@ function Hero() {
 
             .then((response) => {
                 if (!response.ok) {
-                    throw new Error("Network response was not ok");
+                    throw new Error("");
                 }
             })
             .catch((error) => {
@@ -23,7 +23,7 @@ function Hero() {
         fetch('http://0.0.0.0:5000/close')
             .then((response) => {
                 if (!response.ok) {
-                    throw new Error("Network response was not ok");
+                    throw new Error("");
                 }
             })
             .catch((error) => {

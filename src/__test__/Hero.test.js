@@ -27,3 +27,5 @@ test('ÅbenKnapIHeroSektionen', () => {
     const lukkeKnap = screen.getByRole('button', { name: 'Lukke' });
     expect(lukkeKnap).toBeInTheDocument();
   });
+
+  
