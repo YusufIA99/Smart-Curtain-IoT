@@ -43,13 +43,13 @@ function Hero() {
     <section id="hero">
       <div className="Åben åben-btn" id="åben-btn">
         <img src="./Åbent.png" alt="" />
-        <p>Åben gardinerne</p>
+        <p></p>
         <button className="btn">Åben</button>
       </div>
 
       <div className="Lukke" id="lukke-btn">
         <img src="./Lukket.png" alt="" />
-        <p>Luk gardinerne</p>
+        <p></p>
         <button className="btn">Lukke</button>
       </div>
     </section>
