@@ -1,7 +1,6 @@
 ## About this project
 
-The Smart Curtain Control App is a web application built with React and Flask that allows users to control a curtain system using a stepper motor and a temperature sensor. The app provides a user-friendly interface to open and close the curtains based on temperature conditions..
-
+The Smart Curtain Control App is a web application built with React and a server-side implemented in Python using Flask. The app allows users to control a curtain system using a stepper motor and a temperature sensor. It provides a user-friendly interface to manually open and close the curtains, as well as automatically control the curtains based on specific temperatures.
 ## Available Scripts
 
 In the project directory, you can run:
